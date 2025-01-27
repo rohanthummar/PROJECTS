@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Martel+Sans:wght@600&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", serif;
+    font-weight: 700;
+    /*font-style: italic;*/
+}
+body{
+    background-color: black;
+    color: white;
+}
+.left {
+    width: 25vw;
+    padding: 8px;
+}
+
+.right {
+    width: 75vw;
+    max-height: 100vh;
+    margin: 16px 0;
+    position: relative;
+}
+.home{
+    padding: 10px;
+}
+
+.home ul li{
+    display: flex;
+    gap: 13px;
+    width: 17px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+}
+.heading{
+    display: flex;
+    gap: 7px;
+    width: 100%;
+    padding-top: 14px;
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+.heading img{
+    width: 23px;
+}
+.library{
+    min-height: 74vh;
+    position: relative;
+}
+.footer{
+    display: flex;
+    font-size: 10px;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+}
+.footer a{
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+    align-items: center;
+}
+.header *{
+    padding: 10px;
+}
+.playlist{
+    padding: 16px;
+}
+.cardContainer{
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+.card{
+    width: 180px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: grey;
+    position: relative;
+}
+.card > *{
+    padding-top: 3px;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.play {
+    width: 24px;
+    height: 28px;
+    background-color: #1fdf64;
+    border-radius: 50%;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 145px;  
+    right:17px ;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+.signupbtn{
+    background-color: rgb(34, 34, 34);
+    color: grey;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.signupbtn:hover{
+    font-weight: bold;
+    color: white;
+    font-size: 17px;
+}
+.loginbtn{
+    background-color: rgb(255, 255, 255);
+    border-radius: 21px;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    width: 75px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+.loginbtn:hover{
+    padding: 10px;
+    font-size: 17px;
+    font-weight: bold;
+   width: 80px;
+}
+.playbar{
+    background-color:rgb(34, 34, 34) ;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 10px;
+}
+.playbtn{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
